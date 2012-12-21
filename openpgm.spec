@@ -1,13 +1,13 @@
 Name:          openpgm
 Version:       5.1.118
-Release:       1%{?dist}
+Release:       2%{?dist}
 Summary:       An implementation of the PGM reliable multicast protocol
 
 Group:         System Environment/Libraries
 # The license is LGPLv2.1
 License:       LGPLv2
 URL:           http://openpgm.googlecode.com/
-Source0:       http://openpgm.googlecode.com/files/libpgm-%{version}%7Edfsg.tar.gz
+Source0:       http://openpgm.googlecode.com/files/libpgm-%{version}~dfsg.tar.gz
 
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -49,13 +49,11 @@ rm -rf %{buildroot}
 
 
 %files
-%defattr(-,root,root,-)
 %doc COPYING LICENSE
 %{_libdir}/*.so.*
 
 
 %files devel
-%defattr(-,root,root,-)
 %doc examples/
 %{_includedir}/*
 %{_libdir}/*.so
@@ -63,6 +61,10 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Fri Dec 21 2012 Jose Pedro Oliveira <jpo at di.uminho.pt> - 5.1.118-2
+- Renamed the tarball (replaced '%7E' by '~')
+- Removed the defattr lines
+
 * Wed Dec 19 2012 Jose Pedro Oliveira <jpo at di.uminho.pt> - 5.1.118-1
 - Change license from LGPLv2.1 to LGPLv2 (867182#c13)
 
