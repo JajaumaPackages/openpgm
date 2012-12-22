@@ -1,6 +1,6 @@
 Name:          openpgm
 Version:       5.1.118
-Release:       2%{?dist}
+Release:       3%{?dist}
 Summary:       An implementation of the PGM reliable multicast protocol
 
 Group:         System Environment/Libraries
@@ -10,6 +10,8 @@ URL:           http://openpgm.googlecode.com/
 Source0:       http://openpgm.googlecode.com/files/libpgm-%{version}~dfsg.tar.gz
 
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+
+BuildRequires: python
 
 
 %description
@@ -61,6 +63,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Fri Dec 21 2012 Jose Pedro Oliveira <jpo at di.uminho.pt> - 5.1.118-3
+- Build requires python (no longer available by default in F18+ buildroots)
+
 * Fri Dec 21 2012 Jose Pedro Oliveira <jpo at di.uminho.pt> - 5.1.118-2
 - Renamed the tarball (replaced '%7E' by '~')
 - Removed the defattr lines
