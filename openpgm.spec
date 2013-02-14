@@ -1,6 +1,6 @@
 Name:          openpgm
 Version:       5.1.118
-Release:       3%{?dist}
+Release:       4%{?dist}
 Summary:       An implementation of the PGM reliable multicast protocol
 
 Group:         System Environment/Libraries
@@ -63,6 +63,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.1.118-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
 * Fri Dec 21 2012 Jose Pedro Oliveira <jpo at di.uminho.pt> - 5.1.118-3
 - Build requires python (no longer available by default in F18+ buildroots)
 
