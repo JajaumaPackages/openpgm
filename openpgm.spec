@@ -1,6 +1,6 @@
 Name:          openpgm
-Version:       5.1.118
-Release:       4%{?dist}
+Version:       5.2.122
+Release:       1%{?dist}
 Summary:       An implementation of the PGM reliable multicast protocol
 
 Group:         System Environment/Libraries
@@ -59,10 +59,13 @@ rm -rf %{buildroot}
 %doc examples/
 %{_includedir}/*
 %{_libdir}/*.so
-%{_libdir}/pkgconfig/openpgm-5.1.pc
+%{_libdir}/pkgconfig/openpgm-5.2.pc
 
 
 %changelog
+* Wed May 15 2013 Jose Pedro Oliveira <jpo at di.uminho.pt> - 5.2.122-1
+- Update to 5.2.122
+
 * Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.1.118-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
