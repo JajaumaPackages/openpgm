@@ -1,6 +1,6 @@
 Name:          openpgm
 Version:       5.2.122
-Release:       2%{?dist}
+Release:       3%{?dist}
 Summary:       An implementation of the PGM reliable multicast protocol
 
 Group:         System Environment/Libraries
@@ -63,6 +63,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Sat Jun 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.2.122-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
+
 * Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.2.122-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
 
