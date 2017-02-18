@@ -1,17 +1,19 @@
 Name:          openpgm
 Version:       5.2.122
-Release:       7%{?dist}
+Release:       8%{?dist}
 Summary:       An implementation of the PGM reliable multicast protocol
 
 Group:         System Environment/Libraries
 # The license is LGPLv2.1
 License:       LGPLv2
+# New URL is https://github.com/steve-o/openpgm
 URL:           http://openpgm.googlecode.com/
 Source0:       http://openpgm.googlecode.com/files/libpgm-%{version}~dfsg.tar.gz
 
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires: python
+BuildRequires: perl
 
 
 %description
@@ -63,6 +65,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Sat Feb 18 2017 Jose Pedro Oliveira <jose.p.oliveira.oss at gmail.com> - 5.2.122-8
+- Add perl to the build requirements list (required by galois_generator.pl)
+
 * Sat Feb 11 2017 Fedora Release Engineering <releng@fedoraproject.org> - 5.2.122-7
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild
 
