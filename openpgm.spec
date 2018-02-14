@@ -42,9 +42,6 @@ make DESTDIR=%{buildroot} install
 
 rm %{buildroot}%{_libdir}/libpgm.{a,la}
 
-%clean
-rm -rf %{buildroot}
-
 
 %post -p /sbin/ldconfig
 
