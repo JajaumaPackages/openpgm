@@ -11,6 +11,7 @@ URL:           http://openpgm.googlecode.com/
 Source0:       http://openpgm.googlecode.com/files/libpgm-%{version}~dfsg.tar.gz
 
 
+BuildRequires: gcc
 BuildRequires: python2
 BuildRequires: perl-interpreter
 
