@@ -1,6 +1,6 @@
 Name:          openpgm
 Version:       5.2.122
-Release:       11%{?dist}
+Release:       12%{?dist}
 Summary:       An implementation of the PGM reliable multicast protocol
 
 Group:         System Environment/Libraries
@@ -11,7 +11,7 @@ URL:           http://openpgm.googlecode.com/
 Source0:       http://openpgm.googlecode.com/files/libpgm-%{version}~dfsg.tar.gz
 
 
-BuildRequires: python
+BuildRequires: python2
 BuildRequires: perl-interpreter
 
 
@@ -61,6 +61,10 @@ rm %{buildroot}%{_libdir}/libpgm.{a,la}
 
 
 %changelog
+* Mon Mar 19 2018 Iryna Shcherbina <ishcherb@redhat.com> - 5.2.122-12
+- Update Python 2 dependency declarations to new packaging standards
+  (See https://fedoraproject.org/wiki/FinalizingFedoraSwitchtoPython3)
+
 * Thu Feb 08 2018 Fedora Release Engineering <releng@fedoraproject.org> - 5.2.122-11
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
 
