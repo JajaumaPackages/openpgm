@@ -8,7 +8,7 @@ Group:         System Environment/Libraries
 License:       LGPLv2
 # New URL is https://github.com/steve-o/openpgm
 URL:           http://openpgm.googlecode.com/
-Source0:       http://openpgm.googlecode.com/files/libpgm-%{version}~dfsg.tar.gz
+Source0:       https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/openpgm/libpgm-%{version}~dfsg.tar.gz
 
 
 BuildRequires: gcc
